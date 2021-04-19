@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.IO;
 
 namespace Projet_Final
 {
-
     internal static class GlobalVariables
     {
         //public static List<Etudiant> listeEtudiants = new List<Etudiant>();
@@ -15,6 +14,39 @@ namespace Projet_Final
         //public static List<Note> listeNotes = new List<Note>();
         public static int listBoxEtudiantIndex = -1;
         public static int listBoxCoursIndex = -1;
+        public static string path = Path.Combine(Environment.CurrentDirectory, @"Data", "ListeEtudiants.txt");
+
+        public static void CreateInFile()
+        {
+            if (!File.Exists(path))
+            {
+                using (StreamWriter sw = File.CreateText(path))
+                {
+                    //sw.WriteLine("Ceci est la liste d'edudiants");
+                }
+            }
+        }
+
+        /*public static void AddInFile(Etudiant etudiant)
+        {
+            using (StreamWriter sw = File.CreateText(path))
+            {
+                sw.WriteLine(etudiant.toString());
+            }
+        }
+
+        public static void ReadInFile()
+        {
+            using (StreamReader sr = File.OpenText(path))
+            {
+                string s;
+                while ((s = sr.ReadLine()) != null)
+                {
+                    string[] words = s.Split(',');
+                    ListeEtudiants.Add(new Etudiant(words[0], words[1], words[2]));
+                }
+            }
+        }*/
     }
     static class Program
     {
