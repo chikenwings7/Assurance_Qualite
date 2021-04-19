@@ -11,3 +11,17 @@ D:\Github\Assurance_Qualite\Projet_Final\obj\Debug\Projet_Final.exe
 D:\Github\Assurance_Qualite\Projet_Final\obj\Debug\Projet_Final.pdb
 D:\Github\Assurance_Qualite\Projet_Final\obj\Debug\Projet_Final.NouveauCoursForm.resources
 D:\Github\Assurance_Qualite\Projet_Final\obj\Debug\Projet_Final.ListeEtudiantsForm.resources
+C:\Users\rolan\OneDrive\Documents\GitHub\Assurance_Qualite\Projet_Final\bin\Debug\Projet_Final.exe.config
+C:\Users\rolan\OneDrive\Documents\GitHub\Assurance_Qualite\Projet_Final\bin\Debug\Projet_Final.exe
+C:\Users\rolan\OneDrive\Documents\GitHub\Assurance_Qualite\Projet_Final\bin\Debug\Projet_Final.pdb
+C:\Users\rolan\OneDrive\Documents\GitHub\Assurance_Qualite\Projet_Final\obj\Debug\Projet_Final.csprojAssemblyReference.cache
+C:\Users\rolan\OneDrive\Documents\GitHub\Assurance_Qualite\Projet_Final\obj\Debug\Projet_Final.ListeEtudiantsForm.resources
+C:\Users\rolan\OneDrive\Documents\GitHub\Assurance_Qualite\Projet_Final\obj\Debug\Projet_Final.MainForm.resources
+C:\Users\rolan\OneDrive\Documents\GitHub\Assurance_Qualite\Projet_Final\obj\Debug\Projet_Final.NouveauCoursForm.resources
+C:\Users\rolan\OneDrive\Documents\GitHub\Assurance_Qualite\Projet_Final\obj\Debug\Projet_Final.NouveauEtudiantForm.resources
+C:\Users\rolan\OneDrive\Documents\GitHub\Assurance_Qualite\Projet_Final\obj\Debug\Projet_Final.NouvelleNoteForm.resources
+C:\Users\rolan\OneDrive\Documents\GitHub\Assurance_Qualite\Projet_Final\obj\Debug\Projet_Final.Properties.Resources.resources
+C:\Users\rolan\OneDrive\Documents\GitHub\Assurance_Qualite\Projet_Final\obj\Debug\Projet_Final.csproj.GenerateResource.cache
+C:\Users\rolan\OneDrive\Documents\GitHub\Assurance_Qualite\Projet_Final\obj\Debug\Projet_Final.csproj.CoreCompileInputs.cache
+C:\Users\rolan\OneDrive\Documents\GitHub\Assurance_Qualite\Projet_Final\obj\Debug\Projet_Final.exe
+C:\Users\rolan\OneDrive\Documents\GitHub\Assurance_Qualite\Projet_Final\obj\Debug\Projet_Final.pdb

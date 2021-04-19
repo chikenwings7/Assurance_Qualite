@@ -49,9 +49,26 @@ namespace Projet_Final
             }
             else
             {
-                MessageBox.Show("Sélectionner un étudiant à qui ajouter une note.");
+                MessageBox.Show("Sélectionner un étudiant et un cours.");
             }
         }
 
+        private void buttonVoirNote_Click(object sender, EventArgs e)
+        {
+            if (listBoxEtudiants.SelectedIndex != -1 && listBoxCours.SelectedIndex != -1)
+            {
+                foreach (var note in GlobalVariables.listeNote)
+                { 
+                    if(note.getNumberoEtudiant() == listBoxEtudiants.SelectedItem.ToString() && note.getNumberoCours() == listBoxCours.SelectedItem.ToString())
+                    {
+                        MessageBox.Show(note.getNote());
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sélectionner un étudiant et un cours.");
+                    }
+                }
+            }
+        }
     }
 }

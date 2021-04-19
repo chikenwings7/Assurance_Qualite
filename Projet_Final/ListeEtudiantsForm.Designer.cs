@@ -34,6 +34,7 @@ namespace Projet_Final
             this.buttonClose = new System.Windows.Forms.Button();
             this.buttonSaveToFile = new System.Windows.Forms.Button();
             this.listBoxCours = new System.Windows.Forms.ListBox();
+            this.buttonVoirNote = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBoxEtudiants
@@ -50,7 +51,7 @@ namespace Projet_Final
             // buttonNouvelleNote
             // 
             this.buttonNouvelleNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonNouvelleNote.Location = new System.Drawing.Point(163, 425);
+            this.buttonNouvelleNote.Location = new System.Drawing.Point(65, 421);
             this.buttonNouvelleNote.Name = "buttonNouvelleNote";
             this.buttonNouvelleNote.Size = new System.Drawing.Size(110, 58);
             this.buttonNouvelleNote.TabIndex = 1;
@@ -61,7 +62,7 @@ namespace Projet_Final
             // buttonClose
             // 
             this.buttonClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClose.Location = new System.Drawing.Point(442, 425);
+            this.buttonClose.Location = new System.Drawing.Point(384, 421);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(110, 58);
             this.buttonClose.TabIndex = 2;
@@ -72,7 +73,7 @@ namespace Projet_Final
             // buttonSaveToFile
             // 
             this.buttonSaveToFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSaveToFile.Location = new System.Drawing.Point(304, 425);
+            this.buttonSaveToFile.Location = new System.Drawing.Point(223, 421);
             this.buttonSaveToFile.Name = "buttonSaveToFile";
             this.buttonSaveToFile.Size = new System.Drawing.Size(110, 58);
             this.buttonSaveToFile.TabIndex = 3;
@@ -90,11 +91,23 @@ namespace Projet_Final
             this.listBoxCours.Sorted = true;
             this.listBoxCours.TabIndex = 4;
             // 
+            // buttonVoirNote
+            // 
+            this.buttonVoirNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonVoirNote.Location = new System.Drawing.Point(536, 420);
+            this.buttonVoirNote.Name = "buttonVoirNote";
+            this.buttonVoirNote.Size = new System.Drawing.Size(110, 58);
+            this.buttonVoirNote.TabIndex = 5;
+            this.buttonVoirNote.Text = "Voir Note";
+            this.buttonVoirNote.UseVisualStyleBackColor = true;
+            this.buttonVoirNote.Click += new System.EventHandler(this.buttonVoirNote_Click);
+            // 
             // ListeEtudiantsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(733, 497);
+            this.Controls.Add(this.buttonVoirNote);
             this.Controls.Add(this.listBoxCours);
             this.Controls.Add(this.buttonSaveToFile);
             this.Controls.Add(this.buttonClose);
@@ -114,5 +127,6 @@ namespace Projet_Final
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Button buttonSaveToFile;
         private System.Windows.Forms.ListBox listBoxCours;
+        private System.Windows.Forms.Button buttonVoirNote;
     }
 }
