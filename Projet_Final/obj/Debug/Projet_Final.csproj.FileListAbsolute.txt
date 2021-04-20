@@ -25,3 +25,4 @@ C:\Users\rolan\OneDrive\Documents\GitHub\Assurance_Qualite\Projet_Final\obj\Debu
 C:\Users\rolan\OneDrive\Documents\GitHub\Assurance_Qualite\Projet_Final\obj\Debug\Projet_Final.csproj.CoreCompileInputs.cache
 C:\Users\rolan\OneDrive\Documents\GitHub\Assurance_Qualite\Projet_Final\obj\Debug\Projet_Final.exe
 C:\Users\rolan\OneDrive\Documents\GitHub\Assurance_Qualite\Projet_Final\obj\Debug\Projet_Final.pdb
+D:\Github\Assurance_Qualite\Projet_Final\obj\Debug\Projet_Final.NouvelleNoteForm.resources

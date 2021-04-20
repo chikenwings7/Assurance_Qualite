@@ -19,15 +19,15 @@ namespace Projet_Final
 
         private void ListeEtudiantsForm_Load(object sender, EventArgs e)
         {
-            //foreach (var etudiant in GlobalVariables.listeEtudiants)
-            //{
-            //listBoxEtudiants.Items.Add(etudiant.ToString());
-            //}
+            foreach (var etudiant in GlobalVariables.listeEtudiants)
+            {
+            listBoxEtudiants.Items.Add(etudiant.ToString());
+            }
 
-            //foreach (var cours in GlobalVariables.listeCours)
-            //{
-            //listBoxCours.Items.Add(cours.ToString());
-            //}
+            foreach (var cours in GlobalVariables.listeCours)
+            {
+            listBoxCours.Items.Add(cours.ToString());
+            }
 
         }
 
@@ -57,17 +57,25 @@ namespace Projet_Final
         {
             if (listBoxEtudiants.SelectedIndex != -1 && listBoxCours.SelectedIndex != -1)
             {
-                foreach (var note in GlobalVariables.listeNote)
+                foreach (var note in GlobalVariables.listeNotes)
                 { 
-                    if(note.getNumberoEtudiant() == listBoxEtudiants.SelectedItem.ToString() && note.getNumberoCours() == listBoxCours.SelectedItem.ToString())
+                    if(listBoxEtudiants.SelectedItem.ToString().Contains(note.getNumeroEtudiant()) && listBoxCours.SelectedItem.ToString().Contains(note.getNumeroCours()))
                     {
                         MessageBox.Show(note.getNote());
                     }
-                    else
-                    {
-                        MessageBox.Show("Sélectionner un étudiant et un cours.");
-                    }
                 }
+            }
+            else
+            {
+                MessageBox.Show("Sélectionner un étudiant et un cours.");
+            }
+        }
+
+        private void buttonSaveToFile_Click(object sender, EventArgs e)
+        {
+            foreach (var etudiant in GlobalVariables.listeEtudiants)
+            {
+                GlobalVariables.AddInFile(etudiant);
             }
         }
     }

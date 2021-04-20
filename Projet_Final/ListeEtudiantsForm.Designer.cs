@@ -32,9 +32,9 @@ namespace Projet_Final
             this.listBoxEtudiants = new System.Windows.Forms.ListBox();
             this.buttonNouvelleNote = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.buttonSaveToFile = new System.Windows.Forms.Button();
             this.listBoxCours = new System.Windows.Forms.ListBox();
             this.buttonVoirNote = new System.Windows.Forms.Button();
+            this.buttonSaveToFile = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBoxEtudiants
@@ -70,16 +70,6 @@ namespace Projet_Final
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
-            // buttonSaveToFile
-            // 
-            this.buttonSaveToFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSaveToFile.Location = new System.Drawing.Point(223, 421);
-            this.buttonSaveToFile.Name = "buttonSaveToFile";
-            this.buttonSaveToFile.Size = new System.Drawing.Size(110, 58);
-            this.buttonSaveToFile.TabIndex = 3;
-            this.buttonSaveToFile.Text = "Sauvegarder Dans Un Fichier";
-            this.buttonSaveToFile.UseVisualStyleBackColor = true;
-            // 
             // listBoxCours
             // 
             this.listBoxCours.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -101,6 +91,17 @@ namespace Projet_Final
             this.buttonVoirNote.Text = "Voir Note";
             this.buttonVoirNote.UseVisualStyleBackColor = true;
             this.buttonVoirNote.Click += new System.EventHandler(this.buttonVoirNote_Click);
+            // 
+            // buttonSaveToFile
+            // 
+            this.buttonSaveToFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSaveToFile.Location = new System.Drawing.Point(223, 421);
+            this.buttonSaveToFile.Name = "buttonSaveToFile";
+            this.buttonSaveToFile.Size = new System.Drawing.Size(110, 58);
+            this.buttonSaveToFile.TabIndex = 3;
+            this.buttonSaveToFile.Text = "Sauvegarder Dans Un Fichier";
+            this.buttonSaveToFile.UseVisualStyleBackColor = true;
+            this.buttonSaveToFile.Click += new System.EventHandler(this.buttonSaveToFile_Click);
             // 
             // ListeEtudiantsForm
             // 
@@ -125,8 +126,8 @@ namespace Projet_Final
         private System.Windows.Forms.ListBox listBoxEtudiants;
         private System.Windows.Forms.Button buttonNouvelleNote;
         private System.Windows.Forms.Button buttonClose;
-        private System.Windows.Forms.Button buttonSaveToFile;
         private System.Windows.Forms.ListBox listBoxCours;
         private System.Windows.Forms.Button buttonVoirNote;
+        private System.Windows.Forms.Button buttonSaveToFile;
     }
 }

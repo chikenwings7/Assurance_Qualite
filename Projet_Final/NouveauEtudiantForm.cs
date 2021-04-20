@@ -22,7 +22,8 @@ namespace Projet_Final
             string numeroEtudiant = textBoxNumeroEtudiant.Text;
             string nomEtudiant = textBoxNomEtudiant.Text;
             string prenomEtudiant = textBoxPrenomEtudiant.Text;
-            //ListeEtudiants.Add(new Etudiant(numeroEtudiant, nomEtudiant, prenomEtudiant));
+            Etudiant etudiant = new Etudiant(prenomEtudiant, nomEtudiant, numeroEtudiant);
+            GlobalVariables.listeEtudiants.Add(etudiant);
             this.DialogResult = DialogResult.OK;
         }
     }

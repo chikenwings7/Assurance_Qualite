@@ -77,6 +77,7 @@ namespace Projet_Final
             this.Controls.Add(this.buttonNouveauEtudiant);
             this.Name = "MainForm";
             this.Text = "Projet Final";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
 
         }
