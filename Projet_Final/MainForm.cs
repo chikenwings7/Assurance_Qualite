@@ -40,5 +40,11 @@ namespace Projet_Final
             formListeEtudiants.ShowDialog();
             this.Show();
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            GlobalVariables.CreateInFile();
+            GlobalVariables.ReadInFile();
+        }
     }
 }

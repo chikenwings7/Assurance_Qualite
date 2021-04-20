@@ -9,12 +9,12 @@ namespace Projet_Final
 {
     internal static class GlobalVariables
     {
-        //public static List<Etudiant> listeEtudiants = new List<Etudiant>();
-        //public static List<Cours> listeCours = new List<Cours>();
-        //public static List<Note> listeNotes = new List<Note>();
+        public static List<Etudiant> listeEtudiants = new List<Etudiant>();
+        public static List<Cours> listeCours = new List<Cours>();
+        public static List<Note> listeNotes = new List<Note>();
         public static int listBoxEtudiantIndex = -1;
         public static int listBoxCoursIndex = -1;
-        public static string path = Path.Combine(Environment.CurrentDirectory, @"Data", "ListeEtudiants.txt");
+        public static string path = Path.Combine(Environment.CurrentDirectory, @"ListeEtudiants.txt");
 
         public static void CreateInFile()
         {
@@ -27,11 +27,11 @@ namespace Projet_Final
             }
         }
 
-        /*public static void AddInFile(Etudiant etudiant)
+        public static void AddInFile(Etudiant etudiant)
         {
             using (StreamWriter sw = File.CreateText(path))
             {
-                sw.WriteLine(etudiant.toString());
+                    sw.WriteLine(etudiant.ToString());
             }
         }
 
@@ -42,11 +42,14 @@ namespace Projet_Final
                 string s;
                 while ((s = sr.ReadLine()) != null)
                 {
-                    string[] words = s.Split(',');
-                    ListeEtudiants.Add(new Etudiant(words[0], words[1], words[2]));
+                    if (s != "")
+                    {
+                        string[] words = s.Split(',');
+                        GlobalVariables.listeEtudiants.Add(new Etudiant(words[0], words[1], words[2]));
+                    }
                 }
             }
-        }*/
+        }
     }
     static class Program
     {

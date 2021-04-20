@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cours.cs" />
+    <Compile Include="Etudiant.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +60,7 @@
     <Compile Include="ListeEtudiantsForm.Designer.cs">
       <DependentUpon>ListeEtudiantsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Note.cs" />
     <Compile Include="NouveauCoursForm.cs">
       <SubType>Form</SubType>
     </Compile>

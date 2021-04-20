@@ -22,7 +22,7 @@ namespace Projet_Final
             string numeroCours = textBoxNumeroCours.Text;
             string codeCours = textBoxCodeCours.Text;
             string titreCours = textBoxTitreCours.Text;
-            //ListeCours.Add(new Cours(numeroCours, codeCours, titreCours));
+            GlobalVariables.listeCours.Add(new Cours(numeroCours, codeCours, titreCours));
             this.DialogResult = DialogResult.OK;
         }
     }

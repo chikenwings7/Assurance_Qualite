@@ -20,21 +20,23 @@ namespace Projet_Final
         private void NouvelleNoteForm_Load(object sender, EventArgs e)
         {
 
-            //Etudiand etudiantSelectionne = GlobalVariables.listeEtudiants[GlobalVariables.listBoxEtudiantIndex];
-            //labelNumeroEtudiant.Text.Append(etudiantSelectionne.getNumeroEtudiant());
-            //labelNomEtudiant.Text.Append(etudiantSelectionne.getNomEtudiant());
-            //labelNomEtudiant.Text.Append(etudiantSelectionne.getPrenomEtudiant());
+            Etudiant etudiantSelectionne = GlobalVariables.listeEtudiants[GlobalVariables.listBoxEtudiantIndex];
+            labelNumeroEtudiant.Text += etudiantSelectionne.getNumeroEtudiant();
+            labelNomEtudiant.Text += etudiantSelectionne.getNom();
+            labelPrenomEtudiant.Text += etudiantSelectionne.getPrenom();
 
-            //Cours coursSelectionne = GlobalVariables.listeCours[GlobalVariables.listBoxCoursIndex];
-            //labelNumeroCours.Text.Append(coursSelectionne.getNumeroCours());
-            //labelCodeCours.Text.Append(coursSelectionne.getCode());
-            //labelTitreCours.Text.Append(coursSelectionne.getTitre());
+            Cours coursSelectionne = GlobalVariables.listeCours[GlobalVariables.listBoxCoursIndex];
+            labelNumeroCours.Text += coursSelectionne.getNumeroCours();
+            labelCodeCours.Text += coursSelectionne.getCode();
+            labelTitreCours.Text += coursSelectionne.getTitre();
         }
 
         private void buttonSubmitNote_Click(object sender, EventArgs e)
         {
+            Etudiant etudiantSelectionne = GlobalVariables.listeEtudiants[GlobalVariables.listBoxEtudiantIndex];
+            Cours coursSelectionne = GlobalVariables.listeCours[GlobalVariables.listBoxCoursIndex];
             string nouvelleNote = textBoxNouvelleNote.Text;
-            //GlobalVariables.ListeNotes.Add(new Note(etudiantSelectionne.getNumeroEtudiant(), coursSelectionne.getNumeroCours(), nouvelleNote));
+            GlobalVariables.listeNotes.Add(new Note(etudiantSelectionne.getNumeroEtudiant(), coursSelectionne.getNumeroCours(), nouvelleNote));
             this.DialogResult = DialogResult.OK;
         }
     }
